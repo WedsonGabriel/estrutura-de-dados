@@ -13,7 +13,7 @@ public class Pilha implements InterfacePilha {
 
     // MÉTODOS
     @Override
-    public void push(String value) {
+    public void push(Object value) {
         Node node = new Node();
         node.setValue(value);
         node.setNext(head);
@@ -53,7 +53,7 @@ public class Pilha implements InterfacePilha {
 
     @Override
     public String toString() {
-        List<String> pilha = new ArrayList<>();
+        List<Object> pilha = new ArrayList<>();
 
         Node n = head;
         while (n != null) {

@@ -1,10 +1,13 @@
 package atividade_linkedList_pilha.application;
 import atividade_linkedList_pilha.util.Pilha;
 import atividade_linkedList_pilha.util.ShowMenu;
+
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
     static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
         boolean rodando = true;

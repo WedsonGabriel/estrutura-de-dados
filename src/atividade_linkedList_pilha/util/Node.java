@@ -2,14 +2,14 @@ package atividade_linkedList_pilha.util;
 
 public class Node {
     // ATRIBUTOS
-    private String value;
+    private Object value;
     private Node next;
 
     // GETTERS AND SETTERS
-    public String getValue() {
+    public Object getValue() {
         return value;
     }
-    public void setValue(String value) {
+    public void setValue(Object value) {
         this.value = value;
     }
     public Node getNext() {
