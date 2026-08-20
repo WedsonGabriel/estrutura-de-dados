@@ -1,16 +1,17 @@
 package atividade_linkedList_pilha.util;
-
 import atividade_linkedList_pilha.exception.PilhaVaziaExcecao;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Pilha implements InterfacePilha {
+    // ATRIBUTOS
     private Node head;
     private int size_;
 
+    // CONSTRUTOR
     public Pilha(){}
 
+    // MÉTODOS
     @Override
     public void push(String value) {
         Node node = new Node();
