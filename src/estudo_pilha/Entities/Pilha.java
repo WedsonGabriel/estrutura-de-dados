@@ -1,5 +1,5 @@
-package Entities;
-import Exception.PilhaVaziaExcecao;
+package estudo_pilha.Entities;
+import estudo_pilha.Exception.PilhaVaziaExcecao;
 
 public class Pilha implements IPilha {
     // ATRIBUTOS

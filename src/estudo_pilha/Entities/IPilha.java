@@ -1,4 +1,4 @@
-package Entities;
+package estudo_pilha.Entities;
 
 public interface IPilha {
     public int size();
