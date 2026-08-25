@@ -11,6 +11,4 @@ public class ShowMenu {
         System.out.println("6 - Exibir pilha");
         System.out.println("7 - Encerrar programa");
     }
-
-
 }
