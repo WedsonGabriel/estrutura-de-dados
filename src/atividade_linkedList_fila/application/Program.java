@@ -21,10 +21,10 @@ public class Program {
             switch (op) {
                 case 1:
                     System.out.print("Digite o nome do elemento que deseja adicionar: ");
-                    fila.push(sc.nextLine());
+                    fila.enqueue(sc.nextLine());
                     break;
                 case 2:
-                    fila.pop();
+                    fila.dequeue();
                     break;
                 case 3:
                     System.out.println(fila.isEmpty());
@@ -33,7 +33,7 @@ public class Program {
                     System.out.println(fila.size());
                     break;
                 case 5:
-                    System.out.println(fila.top());
+                    System.out.println(fila.first());
                     break;
                 case 6:
                     System.out.println(fila);
