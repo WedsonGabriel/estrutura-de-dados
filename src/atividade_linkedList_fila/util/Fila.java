@@ -28,7 +28,7 @@ public class Fila implements InterfaceFila{
 
     // MÉTODOS
     @Override
-    public void push(Object value) {
+    public void enqueue(Object value) {
         Node newNode = new Node();
         newNode.setValue(value);
         newNode.setNext(null);
@@ -55,24 +55,26 @@ public class Fila implements InterfaceFila{
     }
 
     @Override
-    public void pop() {
+    public Object dequeue() {
         if (head == null) {
             throw new FilaVaziaExcecao("A fila está vazia");
         }
+        Object itemRemovido = head;
         head = head.getNext();
         size_--;
 
         if (head == null) {
             tail = null;
         }
+        return itemRemovido;
     }
 
     @Override
-    public Object top() {
+    public Object first() {
         if (head == null) {
             throw new FilaVaziaExcecao("A fila está vazia");
         }
-        return tail.getValue();
+        return head.getValue();
     }
 
     @Override
