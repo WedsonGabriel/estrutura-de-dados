@@ -105,19 +105,19 @@ public class VetorDuplamenteEncadeado implements VetorMedodos {
         if (isEmpty()) {
             return "O Vetor está vazio!";
         }
-        StringBuilder sb = new StringBuilder("NULL -> ");
+        StringBuilder sb = new StringBuilder("NULL <-> ");
         Node atual = head.getNext();
 
         while (atual != tail) {
             sb.append(atual.getValue());
 
             if (atual.getNext() != tail) {
-                sb.append(" -> ");
+                sb.append(" <-> ");
             }
 
             atual = atual.getNext();
         }
-        sb.append(" -> NULL");
+        sb.append(" <-> NULL");
         return sb.toString();
     }
 }

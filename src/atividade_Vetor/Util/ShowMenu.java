@@ -10,7 +10,7 @@ public class ShowMenu {
         System.out.println("4 - removeAtRank");
         System.out.println("5 - size");
         System.out.println("6 - isEmpty");
-        System.out.println("7 - Exibir pilha");
+        System.out.println("7 - Exibir vetor");
         System.out.println("8 - Encerrar programa");
     }
 }
