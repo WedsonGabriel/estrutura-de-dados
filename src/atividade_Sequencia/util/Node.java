@@ -1,28 +1,29 @@
 package atividade_Sequencia.util;
 
-public class Node {
+public class Node implements Position {
     // ATRIBUTOS
-    private Object value;
-    private Node header;
-    private Node trailer;
+    private Object element;
+    private Node next;
+    private Node prev;
 
     // GETTERS AND SETTERS
-    public Object getValue() {
-        return value;
+    @Override
+    public Object element() {
+        return element;
     }
-    public void setValue(Object value) {
-        this.value = value;
+    public void setElement(Object element) {
+        this.element = element;
     }
-    public Node getHeader() {
-        return header;
+    public Node getNext() {
+        return next;
     }
-    public void setHeader(Node header) {
-        this.header = header;
+    public void setNext(Node next) {
+        this.next = next;
     }
-    public Node getTrailer() {
-        return trailer;
+    public Node getPrev() {
+        return prev;
     }
-    public void setTrailer(Node trailer) {
-        this.trailer = trailer;
+    public void setPrev(Node prev) {
+        this.prev = prev;
     }
 }

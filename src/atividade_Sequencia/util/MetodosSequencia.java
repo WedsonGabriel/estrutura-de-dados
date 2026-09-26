@@ -12,19 +12,19 @@ public interface MetodosSequencia {
     Object removeAtRank(Integer position);
 
     // Métodos de Lista
-    Object first();
-    Object last();
-    Object before(Integer position);
-    Object after(Integer position);
-    Object replaceElement(Integer position, Object element);
-    void swapElements(Integer position1, Integer position2);
-    void insertBefore(Integer position, Object element);
-    void insertAfter(Integer position, Object element);
+    Position first();
+    Position last();
+    Position before(Position position);
+    Position after(Position position);
+    Object replaceElement(Position position, Object element);
+    void swapElements(Position position1, Position position2);
+    void insertBefore(Position position, Object element);
+    void insertAfter(Position position, Object element);
     void insertFirst(Object element);
     void insertLast(Object element);
-    Object remove(Integer position);
+    Object remove(Position position);
 
     // Métodos Ponte
-    Object atRank(Integer position);
-    Integer rankOf(Object element);
+    Position atRank(Integer position);
+    Integer rankOf(Position position);
 }
