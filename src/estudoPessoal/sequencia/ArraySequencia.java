@@ -13,7 +13,7 @@ public class ArraySequencia implements InterfaceSequencia {
         array = new Object[this.capacity];
     }
 
-    // MÉTODOS
+    // MÉTODOS (Sem tratamento de exceções)
     @Override
     public Integer size() {
         return size_;

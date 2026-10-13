@@ -16,7 +16,7 @@ public class SequenciaDuplamenteEncadeada implements InterfaceSequencia{
         trailer.setPrev(header);
     }
 
-    // MÉTODOS
+    // MÉTODOS (Sem tratamento de exceções)
     @Override
     public Integer size() {
         return size_;
