@@ -234,4 +234,25 @@ public class SequenciaDuplamenteEncadeada implements InterfaceSequencia{
         size_--;
         return antigoElemento;
     }
+
+    public Node atRank(Integer position) {
+        Node atual = header.getNext();
+
+        for (int i = 0; i < position; i++) {
+            atual = atual.getNext();
+        }
+        return atual;
+    }
+
+    public Integer rankOf(Node node) {
+        Node atual = header.getNext();
+
+        for (int i = 0; i < size_; i++) {
+            if (atual == node) {
+                return i;
+            }
+            atual = atual.getNext();
+        }
+        return -1;
+    }
 }
